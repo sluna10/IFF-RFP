@@ -1,0 +1,42 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlserver"
+  url      = env("DATABASE_URL")
+}
+
+model Jobs3 {
+  Job_Type                                                  String    @id(map: "PK_Jobs3") @db.NVarChar(50)
+  Req_ID                                                    String?   @db.NVarChar(50)
+  Date_Posted                                               DateTime? @db.Date
+  Location                                                  String?   @db.NVarChar(100)
+  Pay_Range                                                 String?   @db.NVarChar(50)
+  Job_Summary                                               String?   @db.NVarChar(750)
+  Essential_Responsibilities                                String?   @db.NVarChar(1850)
+  Qualifications_Required                                   String?   @db.NVarChar(1050)
+  Required_Education_Licenses_Certifications_and_Experience String?   @db.NVarChar(550)
+  Knowledge_Skills_and_Abilities                            String?   @db.NVarChar(950)
+  Close_Date                                                String?   @db.NVarChar(100)
+  Application_Information                                   String?   @db.NVarChar(150)
+}
+
+model Judges {
+  Judgename            String  @id(map: "PK_Judges_Judgename") @db.VarChar(50)
+  DeputyCourtClerkname String? @db.VarChar(50)
+  Room                 Int?
+  Floor                Int?
+  Building             String? @db.VarChar(50)
+  Branch               Int?
+  Department           String? @db.VarChar(50)
+  Phone                String? @db.VarChar(50)
+}
+
+model Services {
+  Service          String  @id(map: "PK_Services_Service") @db.VarChar(50)
+  Room             String? @db.VarChar(10)
+  Floor            String? @db.VarChar(20)
+  HoursOfOperation String? @db.VarChar(150)
+  Phone            String? @db.VarChar(50)
+}
