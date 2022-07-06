@@ -41,9 +41,6 @@ export default function Judge ({Judges}) {
                             ))}
                         </tr>    
                     ))}
-                    <tr style={{}}>
-                        <th style={{}}></th>
-                    </tr>
                 </thead> 
                 <tbody {...getTableBodyProps()}>
                     {rows.map((row) => {
