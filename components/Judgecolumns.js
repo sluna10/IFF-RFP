@@ -1,36 +1,36 @@
 export const COLUMNS = [
     {
         Header: "JUDGES",
-        accessor: "JUDGES"
+        accessor: "Judgename"
     },
 
     {
         Header: "DEPUTY COUNTY CLERK",
-        accessor: "DEPUTY COUNTY CLERK"
+        accessor: "DeputyCourtClerkname"
     },
 
     {
         Header: "ROOM",
-        accessor: "ROOM"
+        accessor: "Room"
     },
 
     {
         Header: "BUILDING",
-        accessor: "BUILDING"
+        accessor: "Building"
     },
 
     {
         Header: "BRANCH",
-        accessor: "BRANCH"
+        accessor: "Branch"
     },
 
     {
         Header: "DEPARTMENT",
-        accessor: "DEPARTMENT"
+        accessor: "Department"
     },
 
     {
         Header: "PHONE",
-        accessor: "PHONE"
+        accessor: "Phone"
     },
 ];

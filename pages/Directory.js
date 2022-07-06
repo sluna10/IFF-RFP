@@ -24,13 +24,11 @@ export default function Judge ({Judges}) {
     headerGroups,
     rows,
     prepareRow,
-    }    = useTable({//useTable hook.. We pass in an object as argument 
-    // columns: COLUMNS,//we specify two properties, columns and rows
-    // data: MOCK_DATA
-
-    columns,//shorthand 
+    }    = useTable({
+    columns,
     data
     });
+    console.log(data)
     
     return(
         <div className={styles.table}>
@@ -46,14 +44,15 @@ export default function Judge ({Judges}) {
                     <tr style={{}}>
                         <th style={{}}></th>
                     </tr>
-                </thead>
+                </thead> 
                 <tbody {...getTableBodyProps()}>
                     {rows.map((row) => {
                         prepareRow(row)
                         return (
                             <tr {...row.getRowProps()}>
-                                {row.cells.map((cell) => {
-                                    return <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
+                                {row.cells.map(cell => {
+                                    return <td {...cell.getCellProps()}>
+                                    {cell.render("Cell")}</td>
                                 })}
                             </tr>
                         )
@@ -65,4 +64,4 @@ export default function Judge ({Judges}) {
             </table>
 		</div>
     )
-}
+};
