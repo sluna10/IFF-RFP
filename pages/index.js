@@ -1,19 +1,26 @@
-import Card from "../components/card";
-import Link from "next/link";
-// import '../styles/Home.module.css'
+import Head from 'next/head'
+import { ArticleList } from '../components/ArticleList'
 
+export default function Home({ articles }) {
+  return (
+    <div>
+      <Head>
+        <title>Webdev Newz</title>
+        <meta name='keywords' content='web development, programming'/>
+      </Head>
 
-export default function Court({court}) {
-    // console.table(judges);
-    // console.table(court);
-    return (
-        <div className="container">
-			<div className="row">
-			<Card
-				title = {<Link href = "http://localhost:3000/Directory">Directory</Link>}
-				// title={<a href = "http://localhost:3000/api/judges">Courthouse Offices</a>}
-				alt="judgesTable"
-				
-				/>
-        </div>
-        </div>)}
+      <ArticleList articles={articles}/>
+    </div>
+  )
+}
+
+export const getStaticProps = async () => {
+  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/`)
+  const articles = await res.json ()
+
+  return {
+    props: {
+      articles
+    }
+  }
+}

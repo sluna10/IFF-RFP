@@ -18,9 +18,7 @@
 }
 
 .table tr:nth-child(even){
-    background-color: rgb(124, 135, 142);
-    color: 
-}
+    background-color: rgb(124, 135, 142);}
 
 .table th {
     position: relative;
