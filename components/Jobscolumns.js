@@ -1,36 +1,41 @@
 export const COLUMNS = [
     {
-        Header: "Title",
+        Header: "JOB TITLE",
         accessor: "Job_Type"
     },
 
     {
-        Header: "DEPUTY COUNTY CLERK",
-        accessor: "DeputyCourtClerkname"
+        Header: "REQ ID",
+        accessor: "Req_ID"
     },
 
     {
-        Header: "ROOM",
-        accessor: "Room"
+        Header: "DATE POSTED",
+        accessor: "Date_Posted"
     },
 
     {
-        Header: "BUILDING",
-        accessor: "Building"
+        Header: "LOCATION",
+        accessor: "Location"
     },
 
     {
-        Header: "BRANCH",
-        accessor: "Branch"
+        Header: "JOB SUMMARY",
+        accessor: "Job_Summary"
     },
 
     {
-        Header: "DEPARTMENT",
-        accessor: "Department"
+        Header: "QUALIFICATIONS REQUIRED",
+        accessor: "Qualifications_Required"
     },
 
     {
-        Header: "PHONE",
-        accessor: "Phone"
+        Header: "REQUIRED EDUCATION, LICENSES, CERTIFICATIONS, AND EXPERIENCE",
+        accessor: "Required_Education_Licenses_Certifications_and_Experience"
+    },
+
+    {
+        Header: "APPLICATION INFORMATION",
+        accessor: "Application_Information"
     },
 ];

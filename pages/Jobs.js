@@ -4,7 +4,7 @@ import { COLUMNS } from "../components/Jobscolumns";
 import styles from '../styles/table.module.css';
 
 export const getServerSideProps = async() => {
-    const res = await fetch("http://localhost:3000/api/servicesApi");
+    const res = await fetch("http://localhost:3000/api/jobApi");
     const Jobs = await res.json();
     // console.log(court);
         
