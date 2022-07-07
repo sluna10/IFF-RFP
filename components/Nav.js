@@ -16,11 +16,14 @@ const Nav = () => {
                 <li>
                     <Link href='/Directory'>Directory</Link>
                 </li>
+                {/* <li>
+                    <Link href='/Maps'>Map</Link>
+                </li> */}
                 <li>
                     <Link href='/Jobs'>Jobs</Link>
                 </li>
                 <li>
-                    <Link href='/Services'>Services</Link>
+                    <Link href='/Feedback'>Feedback</Link>
                 </li>
             </ul>
         </nav>
