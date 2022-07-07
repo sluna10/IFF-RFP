@@ -1,5 +1,5 @@
 .nav {
-    height: 50px;
+    height: 100px;
     padding: 10px;
     background: black;
     color: white;
@@ -16,5 +16,5 @@
   }
   
   .nav ul li a {
-    margin: 5px 15px;
+    margin: 25px 75px;
   }
