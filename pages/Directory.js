@@ -54,9 +54,6 @@ export default function Judge ({Judges}) {
                             </tr>
                         )
                     })}
-                    <tr>
-                        <td style={{}}></td>
-                    </tr>
                 </tbody>
             </table>
 		</div>
