@@ -22,10 +22,6 @@ const Nav = () => {
                 <li>
                     <Link href='/Jobs'>Jobs</Link>
                 </li>
-
-                <li>
-                    <Link href='/Feedback'>Feedback</Link>
-                </li>
             </ul>
         </nav>
     )

@@ -10,11 +10,6 @@ export const COLUMNS = [
     },
 
     {
-        Header: "DATE POSTED",
-        accessor: "Date_Posted"
-    },
-
-    {
         Header: "LOCATION",
         accessor: "Location"
     },
@@ -22,11 +17,6 @@ export const COLUMNS = [
     {
         Header: "JOB SUMMARY",
         accessor: "Job_Summary"
-    },
-
-    {
-        Header: "QUALIFICATIONS REQUIRED",
-        accessor: "Qualifications_Required"
     },
 
     {

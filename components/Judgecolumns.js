@@ -1,5 +1,10 @@
 export const COLUMNS = [
     {
+        Header: "ROOM",
+        accessor: "Room"
+    },
+    
+    {
         Header: "JUDGES",
         accessor: "Judgename"
     },
@@ -7,11 +12,6 @@ export const COLUMNS = [
     {
         Header: "DEPUTY COUNTY CLERK",
         accessor: "DeputyCourtClerkname"
-    },
-
-    {
-        Header: "ROOM",
-        accessor: "Room"
     },
 
     {
